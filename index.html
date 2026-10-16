@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>hd406661595</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,500;0,9..40,700;1,9..40,500&family=Fraunces:opsz,wght@9..144,600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --ink: #1a2332;
+      --muted: #5c6b7a;
+      --paper: #f3efe6;
+      --accent: #0d7c66;
+      --glow: #e8c468;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      min-height: 100vh;
+      font-family: "DM Sans", system-ui, sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(ellipse 80% 60% at 10% 20%, rgba(13, 124, 102, 0.18), transparent 55%),
+        radial-gradient(ellipse 70% 50% at 90% 80%, rgba(232, 196, 104, 0.28), transparent 50%),
+        linear-gradient(160deg, #eef4f1 0%, var(--paper) 45%, #e6ddd0 100%);
+      display: grid;
+      place-items: center;
+      padding: 2rem;
+    }
+
+    main {
+      max-width: 36rem;
+      text-align: center;
+      animation: rise 0.8s ease-out both;
+    }
+
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(16px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .mark {
+      display: inline-block;
+      width: 0.7rem;
+      height: 0.7rem;
+      border-radius: 50%;
+      background: var(--accent);
+      box-shadow: 0 0 0 6px rgba(13, 124, 102, 0.15);
+      margin-bottom: 1.25rem;
+      animation: pulse 2.4s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { box-shadow: 0 0 0 6px rgba(13, 124, 102, 0.15); }
+      50% { box-shadow: 0 0 0 12px rgba(13, 124, 102, 0.05); }
+    }
+
+    h1 {
+      font-family: Fraunces, Georgia, serif;
+      font-size: clamp(2.2rem, 6vw, 3.2rem);
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      line-height: 1.15;
+      margin-bottom: 0.85rem;
+    }
+
+    p {
+      color: var(--muted);
+      font-size: 1.05rem;
+      line-height: 1.65;
+      margin-bottom: 1.75rem;
+    }
+
+    a {
+      display: inline-block;
+      padding: 0.7rem 1.35rem;
+      background: var(--ink);
+      color: #f8f5ef;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.95rem;
+      border-radius: 999px;
+      transition: transform 0.2s ease, background 0.2s ease;
+    }
+
+    a:hover {
+      background: var(--accent);
+      transform: translateY(-2px);
+    }
+
+    time {
+      display: block;
+      margin-top: 2.5rem;
+      font-size: 0.8rem;
+      color: var(--muted);
+      letter-spacing: 0.04em;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="mark" aria-hidden="true"></span>
+    <h1>你好，这里是 hd406661595</h1>
+    <p>这是一个挂在 GitHub Pages 上的个人站点。随便放点内容，证明这个域名已经活了。</p>
+    <a href="https://github.com/hd406661595">打开我的 GitHub</a>
+    <time datetime="2026">GitHub Pages · 2026</time>
+  </main>
+</body>
+</html>
